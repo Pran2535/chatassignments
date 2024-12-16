@@ -1,50 +1,76 @@
-# Welcome to your Expo app 👋
+# Chat Screen Application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## Introduction
+This project is a React Native application that replicates a chat screen UI for both Android and iOS devices. The application fetches chat data from a remote API and displays it in an infinite scrollable chat interface.
 
-## Get started
+## Features
+- **Hybrid Application:** Works on both Android and iOS.
+- **Real-time Chat Display:** Fetches and displays the most recent chats on load.
+- **Infinite Scrolling:** Automatically loads older messages when scrolling up.
+- **Responsive Design:** Adapts to various screen sizes.
 
-1. Install dependencies
+## Technologies Used
+- React Native
+- Expo (for easy development and testing)
+- Axios (for API requests)
+- React Navigation (if applicable for navigation)
 
+## API Reference
+Data is retrieved from the following API:
+```
+https://qa.corider.in/assignment/chat?page=0
+```
+This endpoint provides paginated chat data. The `page` parameter is incremented to fetch older messages when the user scrolls up.
+
+## Installation and Setup
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/Pran2535/assignmentchat.git
+   cd assignmentchat
+   ```
+
+2. **Install Dependencies:**
    ```bash
    npm install
+   # or
+   yarn install
    ```
 
-2. Start the app
-
+3. **Run the Application:**
    ```bash
-    npx expo start
+   npm start
+   # or
+   yarn start
    ```
+   Follow the on-screen instructions to launch the application on an Android or iOS emulator/device.
 
-In the output, you'll find options to open the app in a
+## Screenshots
+*Attached are screenshots showcasing the chat screen interface.*
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Screen Recording
+A screen recording of the application running on a device is included in the repository.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## How It Works
+1. On application load, the latest chat messages are fetched from the API.
+2. As the user scrolls upward, the application fetches older messages by incrementing the `page` parameter.
+3. Messages are displayed in the chat screen with a clean and responsive design.
 
-## Get a fresh project
 
-When you're ready, run:
 
-```bash
-npm run reset-project
-```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## License
+This project is licensed under the MIT License.
 
-## Learn more
+## Contact
+For any questions or issues, please contact me through [GitHub Issues](https://github.com/Pran2535/assignmentchat/issues).
 
-To learn more about developing your project with Expo, look at the following resources:
+Happy Coding! 🚀
+here is the live demo android working available 
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+https://github.com/user-attachments/assets/995b811e-1243-466e-9adc-20f46e16a89c
 
-## Join the community
 
-Join our community of developers creating universal apps.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+https://github.com/user-attachments/assets/0e450003-1af8-4771-86e8-e80b891b29f1
+
+
